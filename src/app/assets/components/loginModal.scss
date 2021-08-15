@@ -1,0 +1,40 @@
+.login-page {
+
+    min-height: 300px;
+    width: 100%;
+}
+
+.login-page-form {
+    background-color: lightcoral;
+
+    position: relative;
+    width: 60%;
+    margin:10px auto;
+
+    h2 {
+        margin:auto
+    }
+
+    label {
+        display: block;
+        margin: 5px;
+        width: 40%;
+    }
+
+    select {
+        display: block;
+        margin: 5px;
+        width: 40%;
+    }
+
+    input {
+        display: block;
+        margin: 5px;
+        width: 40%;
+    }
+
+    button {
+        margin: 5px;
+    }
+}
+

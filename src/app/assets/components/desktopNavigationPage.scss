@@ -1,0 +1,15 @@
+.desktop-navigation-bar {
+    display: flex;
+    background-color: lightblue;
+}
+
+.nav-bar-left-wing {
+    width: 45%;
+    left:0;
+}
+
+.nav-bar-right-wing {
+    width: 45%;
+    right: 0;
+    display: flex;
+}
