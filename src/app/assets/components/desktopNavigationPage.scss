@@ -1,15 +1,138 @@
 .desktop-navigation-bar {
-    display: flex;
-    background-color: lightblue;
+    display: none;
+    background-color: rgb(40,42,53);
+    width: 100%;
+    padding: 10px;
+    height: 120px;
+    margin:auto;
+    position: relative;
+    box-sizing: border-box;
+
+    * {
+
+        font-size: 32px;
+        color:white
+    }
 }
 
 .nav-bar-left-wing {
-    width: 45%;
+    width: 50%;
     left:0;
+    position: relative;
+
 }
 
 .nav-bar-right-wing {
-    width: 45%;
+    width: 50%;
     right: 0;
+    display: inline-flex;
+    position: relative;
+    justify-content: flex-end;
+
+}
+
+.icon-holder {
+display: inline-block;
+background-color:rgb(255,244,163);
+border-radius: 65px;
+margin: 10px;
+}
+
+.icon {
+    width:auto;
+    height: 50px;
+    padding: 15px;
+
+}
+
+.page-name {
+    display: inline-block;
+    top: 0;
+    position: absolute;
+    height: 50px;
+    margin-left: 20px;
+
+    p {
+       
+    }
+}
+
+.link-holder {
     display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    align-items: center;
+    padding: 26.5px 0;
+    min-width: 150px;
+  & div {
+    margin: 5px;
+  }
+}
+
+.language-dropdown {
+
+    select {
+   
+        width: 200px;
+        color: black;
+        margin : 33px 25px;
+        font-size: 26px;
+
+    }
+    option {
+        position: absolute;
+        background-color: rgb(40,42,53);
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        font-size: 20px;
+        width: 200px;
+
+    }
+
+    .select-selected {
+        background-color: rgb(40,42,53);
+  
+      }
+
+}
+
+.user-info-button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin:30px 0;
+  
+}
+
+.user-info-dropdown {
+  position: absolute;
+  background-color: rgb(40,42,53);
+  padding: 10px;
+  font-size : 26px;
+  transform: translate(-50%, 0px);
+  
+  button {
+        color:black;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        margin:30px 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-navigation-bar {display:flex;}
 }

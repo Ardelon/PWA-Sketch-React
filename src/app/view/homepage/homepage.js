@@ -12,7 +12,8 @@ const Homepage = (props) => {
     }
 
     const text = {
-        TR : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat mauris ac neque ullamcorper, quis viverra tellus vestibulum. Maecenas id odio eu massa fringilla varius eu eu nulla. Maecenas sed suscipit ante. Sed a sagittis urna. Donec eget rhoncus mi, pretium ultrices sem. Integer ligula tortor, pulvinar a mollis vel, sodales at est. Etiam orci velit, tincidunt sit amet est elementum, dictum ultricies tellus. Nulla facilisi. Nullam lobortis semper iaculis. Phasellus nec lacus at enim varius porttitor. Cras aliquet faucibus nisl, vitae tincidunt massa aliquam ultrices.
+        TR : `
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat mauris ac neque ullamcorper, quis viverra tellus vestibulum. Maecenas id odio eu massa fringilla varius eu eu nulla. Maecenas sed suscipit ante. Sed a sagittis urna. Donec eget rhoncus mi, pretium ultrices sem. Integer ligula tortor, pulvinar a mollis vel, sodales at est. Etiam orci velit, tincidunt sit amet est elementum, dictum ultricies tellus. Nulla facilisi. Nullam lobortis semper iaculis. Phasellus nec lacus at enim varius porttitor. Cras aliquet faucibus nisl, vitae tincidunt massa aliquam ultrices.
 
         Nam ultricies purus ut pretium tempus. Aenean ut lacus nunc. Fusce pellentesque urna tellus, et porta lacus dictum id. In vulputate enim ut aliquet viverra. Nunc non sapien in tellus fringilla maximus. Nunc lorem dolor, rutrum id commodo condimentum, accumsan ut arcu. Nunc ullamcorper, sem at ornare fermentum, dui nisi mollis sapien, eget tempor arcu metus a neque. Phasellus nec mi non tortor volutpat elementum. Vestibulum non turpis sit amet elit semper dapibus. Donec dolor velit, scelerisque eget pharetra a, mattis vitae tortor.
         
@@ -20,7 +21,8 @@ const Homepage = (props) => {
         
         In hac habitasse platea dictumst. Nam sodales gravida nibh in elementum. Vestibulum luctus urna erat, non fringilla metus congue nec. Nulla vel sem ac metus interdum pharetra non a erat. Fusce rutrum interdum velit, nec porttitor lorem luctus elementum. Etiam dictum vulputate accumsan. Maecenas consequat consectetur velit, a rutrum leo tempor vitae. Morbi orci arcu, faucibus a faucibus sed, condimentum eget est. Sed vitae nulla tempus, vulputate lectus nec, finibus diam.
         
-        Morbi semper est tellus. Nam viverra ullamcorper tortor, a accumsan mi varius eget. Vivamus lacinia lobortis quam, viverra malesuada felis condimentum ut. Fusce luctus, dui sed molestie tincidunt, risus nibh lacinia mi, et rhoncus erat augue vel augue. In hac habitasse platea dictumst. Donec gravida ut leo non sodales. Quisque lobortis risus in erat gravida aliquet elementum eu odio. Nulla quis rutrum mi, ac faucibus quam. Suspendisse vulputate, neque ut malesuada mollis, sem risus porttitor nisi, sed pellentesque tortor urna nec metus. Nulla viverra elementum rhoncus. Nullam aliquam velit eu neque fermentum, ac tincidunt sem suscipit. Sed consequat, ipsum quis bibendum volutpat, ligula mauris malesuada purus, non lacinia nunc dui sed elit.`,
+        Morbi semper est tellus. Nam viverra ullamcorper tortor, a accumsan mi varius eget. Vivamus lacinia lobortis quam, viverra malesuada felis condimentum ut. Fusce luctus, dui sed molestie tincidunt, risus nibh lacinia mi, et rhoncus erat augue vel augue. In hac habitasse platea dictumst. Donec gravida ut leo non sodales. Quisque lobortis risus in erat gravida aliquet elementum eu odio. Nulla quis rutrum mi, ac faucibus quam. Suspendisse vulputate, neque ut malesuada mollis, sem risus porttitor nisi, sed pellentesque tortor urna nec metus. Nulla viverra elementum rhoncus. Nullam aliquam velit eu neque fermentum, ac tincidunt sem suscipit. Sed consequat, ipsum quis bibendum volutpat, ligula mauris malesuada purus, non lacinia nunc dui sed elit.
+        `,
         US : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dictum orci. Etiam tempor cursus orci, et ullamcorper lectus. Cras ullamcorper lorem sit amet varius porttitor. In in maximus massa. Duis viverra tincidunt ipsum, non fringilla nulla efficitur vel. Donec consequat eu nisi at faucibus. Duis id sapien facilisis, cursus sapien nec, egestas diam. Aliquam vitae odio arcu. Phasellus tristique dignissim risus id commodo. Pellentesque ullamcorper, arcu sit amet aliquam condimentum, sem metus venenatis urna, a feugiat eros erat ut ante. Proin vitae posuere nisl. Aliquam erat volutpat. Donec id mi euismod, viverra dui sit amet, lobortis velit.
 
         Duis sollicitudin tortor massa, ac ultricies elit auctor porta. Mauris vel congue quam. In dapibus posuere metus, semper sodales libero posuere quis. Sed in posuere dui, id semper ipsum. Donec facilisis massa dapibus, egestas velit at, varius orci. Duis aliquam varius purus, in interdum felis. Nam tempus est vitae lacus ultricies, ut mattis justo sollicitudin. Ut mattis massa a facilisis scelerisque.
@@ -42,8 +44,9 @@ const Homepage = (props) => {
     }
 
     return (
-        <div>
-            <h3>{title[localization]}</h3>
+        <div className="homepage">
+            <h2>{title[localization]}</h2>
+            <p>{text[localization]}</p>
             <p>{text[localization]}</p>
         </div>
     )

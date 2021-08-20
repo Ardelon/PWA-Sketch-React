@@ -18,7 +18,6 @@ let store = createStore(isLoggedInReducer);
 
   
 
-store.subscribe(() => console.log(store.getState()))
 
 store.dispatch({ type: 'login/signIn' });
 store.dispatch({ type: 'login/logOut' });

@@ -1,13 +1,21 @@
 .contact-us-page {
     min-height: 300px;
-    width: 100%;
+    width: 80%;
+    font-size : 32px;
+    margin:auto;
+    padding: 60px;
 }
 
 .contact-us-form {
-    background-color: lightcoral;
+    padding: 30px;    
+    
+    background-color: white;
 
+    * {
+        border-radius: 6px;
+    }
     position: relative;
-    width: 60%;
+    width: 80%;
     margin:10px auto;
     
     h2 {
@@ -30,6 +38,7 @@
         display: block;
         margin: 5px;
         width: 40%;
+        font-size: 26px;
     }
     
     button {
@@ -37,3 +46,83 @@
     }
     }
 
+    .border-correct {
+        border : 1px solid green;
+        &:focus-visible {
+          outline : 0px
+        }
+    }
+
+    
+    .border-wrong {
+        border: 1px solid red;
+        &:focus {
+          outline : 0px
+        }
+    }
+
+
+    .search-input {
+
+    }
+    .autocomplete {
+      /*the container must be positioned relative:*/
+      position: relative;
+      display: inline-block;
+    }
+    .search-input {
+      border: 1px solid transparent;
+      background-color: #f1f1f1;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .secarh-input[type=text] {
+      background-color: #f1f1f1;
+      width: 90%;
+    }
+    input[type=submit] {
+      background-color: DodgerBlue;
+      color: #fff;
+    }
+    .search-suggestion-list {
+      position: absolute;
+      display:block;
+
+      a {
+        
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-us-page {  
+          width: 100%;
+          padding: 0px;
+          margin:auto;
+      }
+      .contact-us-form {
+          padding: 10px;
+
+          label {
+            display: block;
+            margin: 5px;
+            width: 90%;
+        }
+        
+        select {
+            display: block;
+            margin: 5px;
+            width: 90%;
+        }
+        
+        input {
+            display: block;
+            margin: 5px;
+            width: 90%;
+            font-size: 26px;
+        }
+        
+        button {
+            margin: 5px;
+        }
+      }
+  }

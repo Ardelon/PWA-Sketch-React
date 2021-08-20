@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Homepage from '../view/homepage/homepage';
 import Login from '../view/login/login';
 import ContactUs from '../view/contactUs/contactUs';
 import DesktopNavigationBar from '../components/desktopNavigationBar/desktopNavigationBar';
 import Footer from '../components/footer/footer';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import MobileNavigationBar from '../components/mobileNavigationBar/mobileNavigationBar';
 
 const RouterComponent = (props) => {
 
@@ -13,7 +14,8 @@ const RouterComponent = (props) => {
 
     return(
         <Router>
-            <DesktopNavigationBar/>
+            <DesktopNavigationBar />
+            <MobileNavigationBar />
             <Switch>
                     <Route exact path="/" component={Homepage} ></Route>
                     <Route path="/contact" component={ContactUs} >{!isLoggedIn ? <Redirect to="/login"/> : null}</Route>
@@ -23,5 +25,7 @@ const RouterComponent = (props) => {
         </Router>
     )
 }
+
+
 
 export default RouterComponent
